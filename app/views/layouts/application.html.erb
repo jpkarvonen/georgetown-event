@@ -4,12 +4,36 @@
     <title>GeorgetownEvent</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://use.typekit.net/kxs8zon.css" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+
+    <div class="header">
+      <%= image_tag("/../assets/georgetown_university_logo_text_knockout.png", class: "header-logo") %>
+    </div>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <footer>
+      <div class="top-footer">
+          <%= image_tag("/../assets/georgetown_university_advancement_logo_text_knockout.png", class: "footer-logo") %>
+      </div>
+
+     <div class="bottom-footer">
+       <ul>
+         <li><a href="#">Contact</a></li>
+         <li><a href="#">Accessibility</a></li>
+         <li><a href="#">Copyright</a></li>
+         <li><a href="#">Privacy</a></li>
+       </ul>
+     </div>
+   </footer>
+
   </body>
 </html>

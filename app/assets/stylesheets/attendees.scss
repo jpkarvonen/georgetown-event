@@ -2,23 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//Event Page Title
+h1, h2 {
+  font-family:"adobe-caslon-pro";
+  color: #041E42;
+}
 .title {
   text-align: center;
-  margin: 10px;
 }
 .title-text {
   display: inline-block;
-  font-family:"adobe-caslon-pro";
   font-style: italic;
   font-size: 75px;
   font-weight:400;
-  margin: 20px;
+  margin: 15px 20px;
 }
 
 .filter-title {
-  font-family:"adobe-caslon-pro";
   font-size: 30px;
   margin: 0px;
+  padding-top: 5px;
 }
 
 .column {
@@ -31,6 +34,12 @@
   height: 100%;
   display: grid;
 }
+
+.column.side p, li {
+  font-family:"futura-pt";
+  font-size: 16.5px;
+}
+
 
 .column.middle {
   width: 70%;
@@ -49,12 +58,11 @@
 .searchTerm {
   width: 100%;
   border: none;
-  padding: 5px;
+  padding-left: 5px 5px 5px 10px;
   height: 50px;
   outline: none;
   color: #000;
 }
-
 
 .searchButton {
   border: none;
@@ -69,10 +77,18 @@
 .wrap{
   width: 100%;
   height: 100%;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #000;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #63666A;
 }
 
+.wrap p {
+  margin-bottom: 10px;
+}
+
+::placeholder {
+  font-family:"futura-pt";
+  font-weight: bold;
+}
 
 //checkboxes
 
@@ -82,14 +98,36 @@
     display: flex;
 }
 
-.checkWrap{
+.schoolWrap{
   width: 100%;
   height: 100%;
   padding-top: 20px;
-  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #63666A;
+}
+
+.registrationWrap{
+  width: 100%;
+  height: 100%;
+  padding-top: 35px;
+  padding-bottom: 5px;
 }
 
 li {
+  float: left;
+}
+
+.checkList {
+  width: 100%;
+}
+
+.checkLeft {
+  width: 50%;
+  float: left;
+}
+
+.checkRight {
+  width: 50%;
   float: left;
 }
 
@@ -106,7 +144,7 @@ input {
     font-size: 1rem;
     line-height: 1.5;
     padding: 11px 23px;
-    border: 1px solid rgba(0,0,0,.15);
+    border: 0.5px solid #63666A;
     border-radius: 0;
     outline: 0;
     background-color: transparent;
@@ -137,11 +175,11 @@ input {
     left: 5px;
     width: 10px;
     height: 10px;
-    background-color: #01a982;
+    background-color: #041E42;
 }
 
 .checkbox-button__input:checked+.checkbox-button__control {
-    border-color: #01a982;
+    border-color: #041E42;
 }
 
 .checkbox-button__control {
@@ -151,16 +189,45 @@ input {
 //Attendee Cards
 
 .attendeeCard {
-  border: 1px solid #000;
+  display: grid;
+  border: 1px solid #63666A;
   margin-bottom: 75px;
   height: 210px;
   width: 325px;
 }
 
+.attendeeInfo {
+  display: inline-block;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  padding-top: 25px;
+  width: 200px;
+  border-bottom: 1px solid #63666A;
+}
+
+.attendeeStatus {
+  display: inline-block;
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 200px;
+  font-family:"futura-pt";
+}
+
+.attendeeName {
+  margin-bottom: 12px;
+}
+
+.schoolInfo {
+  margin-bottom: 8px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  color: #63666A;
+}
+
 .middleLeft {
   width: 40%;
   float: left;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 30px 0px 50px;
   display: grid;
 }
 
@@ -172,9 +239,21 @@ input {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1135px) {
   .column.side, .column.middle {
     width: 100%;
     height: 100%;
   }
+  .column.middle {
+    margin-top: 50px;
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+  .middleLeft, .middleRith {
+    width: 100%;
+    height: 100%;
+  }
+
 }

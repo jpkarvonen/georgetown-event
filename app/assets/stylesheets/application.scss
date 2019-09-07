@@ -26,7 +26,7 @@ ul {
  }
 
  .container {
-   padding: 20px;
+   padding: 10px 20px;
    height: 100%;
  }
 
@@ -54,37 +54,54 @@ footer {
  .top-footer{
    background: #041E42;
    width:100%;
-   height:50px
+   height:67.5px;
+   text-align: center;
+ }
+
+ .footer-logo {
+   height: 36px;
+ }
+
+ .footerLogoContainer {
+   display: inline-block;
+   float: right;
+   margin: 15px;
+   height: 100%
  }
 
  .bottom-footer{
    text-align: center;
-   text-align: center;
    background: #fff;
-   height:40px
+   height:40px;
+   margin: 0;
+   overflow: auto;
+   width: 100%;
  }
 
  .bottom-footer ul {
    display: inline-block;
-   margin: 0;
-   padding: 0;
-   /* For IE, the outcast */
-   zoom:1;
-   *display: inline;
+   width: 30%;
+   margin-right: 0;
+   text-align: center;
  }
 
- .bottom-footer li {
-     float: left;
-     padding: 2px 5px;
-     border: 1px solid black;
+ .bottom-footer li, a {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-size: 16px;
+   margin-left: auto;
+   padding-left: 10px;
  }
 
- .footer-logo {
-   height: 20px;
-   display: block;
-   float: right;
-   margin: auto;
- }
+ .bottom-footer a {
+   color: #63666A;
+   text-decoration: none;
+}
+
+ .bottom-footer  a:hover {
+    color:#00A0C6;
+    text-decoration:none;
+    cursor:pointer;
+}
 
  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
  @media screen and (max-width: 500px) {

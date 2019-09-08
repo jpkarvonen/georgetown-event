@@ -1,4 +1,4 @@
-<div class = search-container>
+<main>
 
   <div class="title">
     <h1 class="title-text">Hoyas in August Event Attendees</h1>
@@ -9,33 +9,33 @@
     <div class="column side">
 
       <h2 class="filter-title">Filter Attendees</h2>
-        <div class="wrap">
+        <div class="search-wrap">
           <p>Refine by Name</p>
           <div class="search">
-            <input type="text" class="searchTerm" placeholder="Who are you looking for?">
-            <button type="submit" class="searchButton">
+            <input tabindex="0" type="text" class="search-term" placeholder="Who are you looking for?" aria-label="Search" autofocus>
+            <button tabindex="1" type="submit" class="search-button" autofocus>
               <i class="fa fa-search fa-lg"></i>
             </button>
           </div>
         </div>
 
-      <div class="schoolWrap">
+      <div class="school-wrap">
         <p>School</p>
         <div class="check">
-            <ul class="checkList">
-              <div class="checkLeft">
-                <li>
+            <ul class="check-list">
+              <div class="check-left">
+                <li tabindex="2">
                   <label class="checkbox-button">
-                    <input type="checkbox" class="checkbox-button__input" id="choice1-1" name="choice1">
+                    <input type="checkbox" class="checkbox-button__input" name="college">
                     <span class="checkbox-button__control"></span>
                     <span class="checkbox-button__label">College</span>
                   </label>
                 </li>
               </div>
-              <div class="checkRight">
-                <li>
+              <div class="check-right">
+                <li tabindex="3">
                   <label class="checkbox-button">
-                    <input type="checkbox" class="checkbox-button__input" id="choice1-1" name="choice1">
+                    <input type="checkbox" class="checkbox-button__input" name="law">
                     <span class="checkbox-button__control"></span>
                     <span class="checkbox-button__label">Law</span>
                   </label>
@@ -45,23 +45,23 @@
         </div>
       </div>
 
-      <div class="registrationWrap">
+      <div class="registration-wrap">
         <p>Registration Status</p>
         <div class="check">
-            <ul class="checkList">
-              <div class="checkLeft">
-                <li>
+            <ul class="check-list">
+              <div class="check-left">
+                <li tabindex="4">
                   <label class="checkbox-button">
-                    <input type="checkbox" class="checkbox-button__input" id="choice1-1" name="choice1">
+                    <input type="checkbox" class="checkbox-button__input" name="registered">
                     <span class="checkbox-button__control"></span>
                     <span class="checkbox-button__label">Registered</span>
                   </label>
                 </li>
               </div>
-              <div class="checkRight">
-                <li>
+              <div class="check-right">
+                <li tabindex="5">
                   <label class="checkbox-button">
-                    <input type="checkbox" class="checkbox-button__input" id="choice1-1" name="choice1">
+                    <input type="checkbox" class="checkbox-button__input" name="choice1">
                     <span class="checkbox-button__control"></span>
                     <span class="checkbox-button__label">Not Registered</span>
                   </label>
@@ -75,39 +75,38 @@
 
     <div class="column middle">
       <div class="row">
-        <div class="middleLeft">
-          <div class="attendeeCard">
-            <div class = attendeeInfo>
-              <h2 class="attendeeName">Jane Hoya</h2>
-              <p class="schoolInfo">College 2010, Law 2014</p>
+        <div class="middle-left">
+          <div class="attendee-card">
+            <div class = attendee-info>
+              <h2 class="attendee-name">Jane Hoya</h2>
+              <p class="school-info">College 2010, Law 2014</p>
             </div>
-            <div class = attendeeStatus>
+            <div class = attendee-status>
               <p>Registered</p>
             </div>
           </div>
-          <div class="attendeeCard">
-            <div class = attendeeInfo>
-              <h2 class="attendeeName">Richard Ardoin</h2>
-              <p class="schoolInfo">College 1969, Law 1973</p>
+          <div class="attendee-card">
+            <div class = attendee-info>
+              <h2 class="attendee-name">Richard Ardoin</h2>
+              <p class="school-info">College 1969, Law 1973</p>
             </div>
-            <div class = attendeeStatus>
+            <div class = attendee-status>
               <p>Not Registered</p>
             </div>
           </div>
         </div>
-        <div class="middleRight">
-          <div class="attendeeCard">
-            <div class = attendeeInfo>
-              <h2 class="attendeeName">William Clinton</h2>
-              <p class="schoolInfo">College 1968</p>
+        <div class="middle-right">
+          <div class="attendee-card">
+            <div class = attendee-info>
+              <h2 class="attendee-name">William Clinton</h2>
+              <p class="school-info">College 1968</p>
             </div>
-            <div class = attendeeStatus>
+            <div class = attendee-status>
               <p>Not Registered</p>
             </div>
           </div>
       </div>
     </div>
-
   </div>
 
-</div>
+</main>

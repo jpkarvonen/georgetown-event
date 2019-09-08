@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>GeorgetownEvent</title>
     <%= csrf_meta_tags %>
@@ -12,9 +12,9 @@
 
   <body>
 
-    <div class="header">
-      <%= image_tag("/../assets/georgetown_university_logo_text_knockout.png", class: "header-logo") %>
-    </div>
+    <header>
+      <%= image_tag("/../assets/georgetown_university_logo_text_knockout.png", alt: "Georgetown University", class: "header-logo" ) %>
+    </header>
 
     <div class="container">
       <%= yield %>
@@ -22,17 +22,17 @@
 
     <footer>
       <div class="top-footer">
-        <div class="footerLogoContainer">
-          <%= image_tag("/../assets/georgetown_university_advancement_logo_text_knockout.png", class: "footer-logo") %>
+        <div class="footer-logo-container">
+          <%= image_tag("/../assets/georgetown_university_advancement_logo_text_knockout.png", alt: "Georgetown University Advancement", class: "footer-logo") %>
         </div>
       </div>
 
      <div class="bottom-footer">
        <ul>
-         <li><a href="#">Contact</a></li>
-         <li><a href="#">Accessibility</a></li>
-         <li><a href="#">Copyright</a></li>
-         <li><a href="#">Privacy</a></li>
+         <li tabindex="6"><a href="#">Contact</a></li>
+         <li tabindex="7"><a href="#">Accessibility</a></li>
+         <li tabindex="8"><a href="#">Copyright</a></li>
+         <li tabindex="9"><a href="#">Privacy</a></li>
        </ul>
      </div>
    </footer>

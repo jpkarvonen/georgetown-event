@@ -73,7 +73,7 @@ gem 'jquery-rails'
 
 gem 'bootstrap-sass'
 
-gem 'json', '~> 1.8', '>= 1.8.3'
+gem 'json', '~> 2.3'
 
 gem 'httparty'
 
